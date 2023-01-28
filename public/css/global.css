@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700
+}
+
+:root {
+    --bg-color: #040609;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.bot-card {
+    cursor: pointer;
+    --gradient-1: rgb(5, 5, 12);
+    --gradient-2: rgba(5, 5, 12, .9);
+    --gradient-3: rgba(5, 5, 12, .5);
+    background: linear-gradient(10deg, var(--gradient-1), var(--gradient-1), var(--gradient-2), var(--gradient-3)), var(--card-banner);
+    background-size: cover;
+}
+
+.bot-card:hover {
+    opacity: 0.8;
+}
+
+.bot-card:active {
+    opacity: 0.6;
+}
